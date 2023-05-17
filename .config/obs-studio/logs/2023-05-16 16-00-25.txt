@@ -1,0 +1,44 @@
+16:00:25.170: Using EGL/X11
+16:00:25.170: CPU Name: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+16:00:25.170: CPU Speed: 3700.602MHz
+16:00:25.171: Physical Cores: 4, Logical Cores: 8
+16:00:25.171: Physical Memory: 15947MB Total, 10602MB Free
+16:00:25.171: Kernel Version: Linux 6.1.26-1-MANJARO
+16:00:25.171: Distribution: "Manjaro Linux" Unknown
+16:00:25.171: Session Type: x11
+16:00:25.171: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+16:00:25.172: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+16:00:25.172: Portable mode: false
+16:00:25.211: OBS 29.0.2-2 (linux)
+16:00:25.211: ---------------------------------
+16:00:25.212: ---------------------------------
+16:00:25.212: audio settings reset:
+16:00:25.212: 	samples per sec: 48000
+16:00:25.212: 	speakers:        2
+16:00:25.212: 	max buffering:   960 milliseconds
+16:00:25.212: 	buffering type:  dynamically increasing
+16:00:25.213: ---------------------------------
+16:00:25.213: Initializing OpenGL...
+16:00:25.322: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 1070/PCIe/SSE2
+16:00:25.322: OpenGL loaded successfully, version 3.3.0 NVIDIA 530.41.03, shading language 3.30 NVIDIA via Cg compiler
+16:00:25.357: ---------------------------------
+16:00:25.357: video settings reset:
+16:00:25.357: 	base resolution:   1920x1080
+16:00:25.357: 	output resolution: 1280x720
+16:00:25.357: 	downscale filter:  Bicubic
+16:00:25.357: 	fps:               30/1
+16:00:25.357: 	format:            NV12
+16:00:25.357: 	YUV mode:          Rec. 709/Partial
+16:00:25.357: NV12 texture support not available
+16:00:25.357: P010 texture support not available
+16:00:25.358: Audio monitoring device:
+16:00:25.358: 	name: Default
+16:00:25.358: 	id: default
+16:00:25.358: ---------------------------------
+16:00:25.365: Failed to load 'en-US' text for module: 'decklink-captions.so'
+16:00:25.372: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+16:00:25.377: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+16:00:25.377: Failed to initialize module 'decklink.so'
+16:00:25.490: [pipewire] No captures available
+16:00:25.508: v4l2loopback not installed, virtual camera disabled
+16:00:25.524: NVENC supported

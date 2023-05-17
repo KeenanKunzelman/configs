@@ -1,0 +1,21 @@
+2023-05-16 11:27:05 Loading main app package /usr/lib/obsidian/obsidian.asar
+2023-05-16 11:27:05 Checking for update using Github
+2023-05-16 11:27:05 Success.
+2023-05-16 11:27:05 Latest version is 1.2.8
+2023-05-16 11:27:05 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.2.8/obsidian-1.2.8.asar.gz
+2023-05-16 11:27:05 Verifying hash & signature. Size= 6033374
+2023-05-16 11:27:05 Saving file
+2023-05-16 11:27:05 Update complete.
+2023-05-16 12:18:01 Loading updated app package /home/b33nan/.config/obsidian/obsidian-1.2.8.asar
+2023-05-16 12:18:02 Checking for update using Github
+2023-05-16 12:18:02 Success.
+2023-05-16 12:18:02 Latest version is 1.2.8
+2023-05-16 12:18:02 App is up to date.
+2023-05-16 13:18:02 Checking for update using Github
+2023-05-16 13:18:02 Success.
+2023-05-16 13:18:02 Latest version is 1.2.8
+2023-05-16 13:18:02 App is up to date.
+2023-05-16 14:18:02 Checking for update using Github
+2023-05-16 14:18:02 Success.
+2023-05-16 14:18:02 Latest version is 1.2.8
+2023-05-16 14:18:02 App is up to date.

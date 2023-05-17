@@ -1,0 +1,1258 @@
+[2023-05-17 04:55:21.357] [1881] (engine.cpp:270): Created native Engine, time: Wed May 17 04:55:21 2023 EDT, logPath: /home/b33nan/.config/discord/0.0.27/modules/discord_voice/, logLevel: 2
+[2023-05-17 04:55:21.369] [1881] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-05-17 04:55:21.370] [1881] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:83): Create
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:91): CreateForTest
+[2023-05-17 04:55:21.372] [1881] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:133): CheckPlatform
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:144): current platform is Linux
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:992): PlatformAudioLayer
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2023-05-17 04:55:21.372] [1881] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2023-05-17 04:55:21.372] [1881] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2023-05-17 04:55:21.372] [1881] (audio_device_impl.cc:345): AttachAudioBuffer
+[2023-05-17 04:55:21.372] [1881] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2023-05-17 04:55:21.373] [1881] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2023-05-17 04:55:21.373] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2023-05-17 04:55:21.373] [1881] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2023-05-17 04:55:21.373] [1881] (audio_device_impl.cc:355): ActiveAudioLayer
+[2023-05-17 04:55:21.373] [1881] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-05-17 04:55:21.373] [1881] (audio_engine.cpp:491): Creating audio engine: standard
+[2023-05-17 04:55:21.373] [1881] (audio_device_impl.cc:365): Init
+[2023-05-17 04:55:21.390] [1881] (audio_coding.cpp:147): Using software Opus decoder
+[2023-05-17 04:55:21.390] [1881] (audio_coding.cpp:164): Using software Opus encoder
+[2023-05-17 04:55:21.390] [1881] (audio_device_impl.cc:896): RegisterAudioCallback
+[2023-05-17 04:55:21.390] [1881] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2023-05-17 04:55:21.390] [1881] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-05-17 04:55:21.390] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.390] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.390] [1881] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-05-17 04:55:21.391] [1881] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:574): output: 1
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.391] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.391] [1881] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-05-17 04:55:21.391] [1881] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-05-17 04:55:21.391] [1881] (audio_engine.cpp:204): Setting audio output device: 'default'
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-05-17 04:55:21.391] [1881] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-05-17 04:55:21.391] [1881] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-05-17 04:55:21.392] [1881] (audio_device_impl.cc:620): output: 0
+[2023-05-17 04:55:21.392] [1881] (audio_device_impl.cc:625): SetStereoPlayout(0)
+[2023-05-17 04:55:21.392] [1881] (audio_device_buffer.cc:206): SetPlayoutChannels(1)
+[2023-05-17 04:55:21.392] [1881] (audio_device_impl.cc:912): BuiltInAECIsAvailable
+[2023-05-17 04:55:21.392] [1881] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-05-17 04:55:21.392] [1881] (audio_device_impl.cc:915): output: 0
+[2023-05-17 04:55:21.392] [1881] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-05-17 04:55:21.395] [1881] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-05-17 04:55:21.395] [1881] (agc_manager_direct.cc:69): [agc] GetMinMicLevel
+[2023-05-17 04:55:21.395] [1881] (agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+[2023-05-17 04:55:21.395] [1881] (captured_audio_processor.cpp:119): SetNoiseCancellation: 0
+[2023-05-17 04:55:21.395] [1881] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-05-17 04:55:21.515] [1881] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-05-17 04:55:21.515] [1881] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-05-17 04:55:21.515] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.515] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.515] [1881] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:574): output: 1
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.516] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-05-17 04:55:21.516] [1881] (audio_engine.cpp:204): Setting audio output device: 'default'
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:620): output: 0
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:625): SetStereoPlayout(0)
+[2023-05-17 04:55:21.516] [1881] (audio_device_buffer.cc:206): SetPlayoutChannels(1)
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-05-17 04:55:21.516] [1881] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-05-17 04:55:21.516] [1881] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-05-17 04:55:21.518] [1849] (discord.cpp:658): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 198318, Version Hash: 0b36f7f1bd62d1cb2855e252af710abba106b372"]
+[2023-05-17 04:55:21.576] [1881] (engine.cpp:699): Engine::SetClipBufferLength(0)
+[2023-05-17 04:55:21.612] [1849] (discord.cpp:658): JS console: ["%c[default]","[NATIVE INFO] host 0.0.27, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2023-05-17 04:55:21.631] [1881] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.632] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-05-17 04:55:21.632] [1881] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:574): output: 1
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-05-17 04:55:21.632] [1881] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-05-17 04:55:21.632] [1881] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-05-17 04:55:21.632] [1881] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-05-17 04:55:21.632] [1881] (audio_engine.cpp:204): Setting audio output device: 'default'
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-05-17 04:55:21.632] [1881] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:620): output: 0
+[2023-05-17 04:55:21.632] [1881] (audio_device_impl.cc:625): SetStereoPlayout(0)
+[2023-05-17 04:55:21.632] [1881] (audio_device_buffer.cc:206): SetPlayoutChannels(1)
+[2023-05-17 04:55:21.651] [1849] (discord.cpp:658): JS console: ["Initializing krisp module"]
+[2023-05-17 04:55:22.174] [1849] (discord.cpp:658): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-05-17 04:55:22.303] [1849] (discord.cpp:658): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2023-05-17 04:55:22.503] [1849] (discord.cpp:658): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1442:330)\n    at Bn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1468:696)\n    at Wn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1471:356)\n    at Zn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1471:199)\n    at Yn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1470:886)\n    at Kn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1471:697)\n    at zn (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1471:731)\n    at i (https://discordapp.com/assets/70b8a1a9bf14b3ee9a93.js:1438:961)\n    at 408481 (https://discordapp.com/assets/0c7feb39ae47b3d84f5f.js:21:328)\n    at l (https://discordapp.com/assets/f5f0b113e28d4d12ba16.js:1:154)\n    at 558820 (https://discordapp.com/assets/0c7feb39ae47b3d84f5f.js:14:186)\n    at l (https://discordapp.com/assets/f5f0b113e28d4d12ba16.js:1:154)\n    at 308739 (https://discordapp.com/assets/0c7feb39ae47b3d84f5f.js:2:331)\n    at l (https://discordapp.com/assets/f5f0b113e28d4d12ba16.js:1:154)\n    at 173242 (https://discordapp.com/assets/963f45154c28b340863b.js:368:632)\n    at l (https://discordapp.com/assets/f5f0b113e28d4d12ba16.js:1:154)\n    at 138875 (https://discordapp.com/assets/cbf3a75da6e6b6a4202e.js:45:174)\n    at Function.l (https://discordapp.com/assets/f5f0b113e28d4d12ba16.js:1:154)"]
+[2023-05-17 04:55:22.541] [1849] (discord.cpp:658): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-05-17 04:55:22.544] [1849] (discord.cpp:658): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-05-17 04:55:23.018] [1849] (discord.cpp:658): JS console: ["%c[ConnectionStore]","Socket is reconnecting because of starting new session"]
+[2023-05-17 04:55:23.018] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]",".connect() called, new state is WILL_RECONNECT"]
+[2023-05-17 04:55:23.018] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to WILL_RECONNECT"]
+[2023-05-17 04:55:23.019] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to CONNECTING"]
+[2023-05-17 04:55:23.019] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-05-17 04:55:23.019] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","newOrTakeoverWebSocket()"]
+[2023-05-17 04:55:23.019] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-05-17 04:55:23.020] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2023-05-17 04:55:23.020] [1849] (discord.cpp:658): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2023-05-17 04:55:23.020] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to IDENTIFYING"]
+[2023-05-17 04:55:23.020] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2023-05-17 04:55:23.027] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-c-tv6v: 0, heartbeat interval: 41250, took 8 ms"]
+[2023-05-17 04:55:23.089] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-05-17 04:55:23.091] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-05-17 04:55:24.072] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[READY] took 1052ms, as e259005cfa18349ad3a3f7881be9ae22 via \ngateway-prd-us-east1-c-tv6v: 299.379\n|  id_created: 2.738\n|  session_lookup_time: 0.247\n|  session_lookup_finished: 0.019\n|  discord-sessions-prd-2-164: 266.331\n|  |  start_session: 168.725\n|  |  |  discord-api-6594846f78-4qrr5: 152.957\n|  |  |  |  get_user: 12.282\n|  |  |  |  get_guilds: 26.981\n|  |  |  |  user_settings_proto: 0.153\n|  |  |  |  relationships: 73.608\n|  |  |  |  friend_suggestion: 0.059\n|  |  |  |  connections: 0.233\n|  |  |  |  serialized_read_states: 0.007\n|  |  |  |  pending_payments: 0.001\n|  |  |  |  send_scheduled_deletion_message: 0.002\n|  |  |  |  sanitize_premium_perks: 0.001\n|  |  |  |  guild_join_requests: 0.001\n|  |  |  |  user_guild_settings: 0.001\n|  |  |  |  serialized_private_channels: 0.001\n|  |  |  |  user_segments: 2.521\n|  |  |  |  experiments: 11.785\n|  |  |  |  affine_user_ids: 13.959\n|  |  |  |  required_action: 0.005\n|  |  |  |  authorized_ip_coro: 0.001\n|  |  starting_guild_connect: 0.085\n|  |  presence_started: 0.372\n|  |  guilds_started: 1.841\n|  |  guilds_connect: 69.436\n|  |  presence_connect: 0.001\n|  |  connect_finished: 69.482\n|  |  build_ready: 21.975\n|  |  clean_ready: 0.002\n|  |  optimize_ready: 3.708\n|  |  split_ready: 0.139"]
+[2023-05-17 04:55:24.072] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to SESSION_ESTABLISHED"]
+[2023-05-17 04:55:24.182] [1849] (discord.cpp:658): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2023-05-17 04:55:24.183] [1849] (discord.cpp:658): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2023-05-17 04:55:24.207] [1849] (discord.cpp:658): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-05-17 04:55:24.232] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:55:24.233] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","Added account: keekunz"]
+[2023-05-17 04:55:24.269] [1849] (discord.cpp:658): JS console: ["%c[ConnectionStore]","Dispatched 1 messages in 149ms"]
+[2023-05-17 04:55:24.272] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Updating resume url to wss://gateway-us-east1-c.discord.gg"]
+[2023-05-17 04:55:24.289] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1270ms"]
+[2023-05-17 04:55:24.289] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to SESSION_ESTABLISHED"]
+[2023-05-17 04:55:24.397] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:24.948] [1849] (discord.cpp:658): JS console: ["%c[Flux]","Slow dispatch on GAMES_DATABASE_UPDATE: 127.5ms"]
+[2023-05-17 04:55:25.207] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 898ms"]
+[2023-05-17 04:55:26.105] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:55:26.256] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 3161ms"]
+[2023-05-17 04:55:27.399] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:29.420] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:55:29.581] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 12444ms"]
+[2023-05-17 04:55:30.400] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:33.155] [1849] (discord.cpp:658): JS console: ["%c[RTCLatencyTestManager]","RTC cached preferred region is newark"]
+[2023-05-17 04:55:33.403] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:36.407] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:39.410] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:42.029] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:55:42.225] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 39717ms"]
+[2023-05-17 04:55:42.413] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:45.417] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:48.420] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:51.423] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:54.427] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:55:55.250] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me/262298613516861440"]
+[2023-05-17 04:55:55.256] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 262298613516861440 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 04:55:55.461] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 262298613516861440, remote_fetch_completed: false)"]
+[2023-05-17 04:55:55.484] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 262298613516861440 isBefore:false isAfter:false"]
+[2023-05-17 04:55:57.430] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:00.433] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:03.437] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:06.440] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:09.443] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:12.447] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:15.450] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:18.453] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:21.457] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:21.967] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:56:22.125] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 57432ms"]
+[2023-05-17 04:56:24.460] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:27.463] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:30.467] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:33.470] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:36.473] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:39.477] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:42.480] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:45.483] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:48.487] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:51.490] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:54.494] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:56:57.497] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:00.500] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:03.503] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:06.507] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:09.510] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:12.513] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:15.517] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:18.520] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:19.562] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:57:19.803] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 04:57:21.524] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:24.526] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:27.530] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:30.533] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:33.537] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:36.540] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:39.543] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:42.547] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:45.550] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:48.553] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:51.557] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:54.560] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:57:57.563] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:00.567] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:03.570] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:06.573] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:09.577] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:12.580] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:15.583] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:18.587] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:19.804] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:58:20.003] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 04:58:21.589] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:24.593] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:27.594] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:30.597] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:33.600] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:36.603] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:39.604] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:42.608] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:45.610] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:48.613] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:51.617] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:54.620] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:58:57.623] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:00.626] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:03.630] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:06.633] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:09.637] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:12.640] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:15.643] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:18.646] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:20.007] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 04:59:20.228] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 04:59:21.650] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:24.653] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:27.657] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:30.660] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:33.663] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:36.667] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:39.670] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:42.673] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:45.676] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:48.680] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:51.683] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:54.687] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 04:59:57.690] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:00.693] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:03.697] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:06.700] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:09.703] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:12.707] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:15.710] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:18.713] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:20.234] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:00:20.444] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:00:21.717] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:24.720] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:27.723] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:30.727] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:33.730] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:36.733] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:39.737] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:42.740] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:45.744] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:48.747] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:51.750] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:54.753] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:00:57.756] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:00.760] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:03.763] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:06.767] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:07.858] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 900103909962559539 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 05:01:07.861] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 900103909962559539, remote_fetch_completed: false)"]
+[2023-05-17 05:01:08.127] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 900103909962559539 isBefore:false isAfter:false"]
+[2023-05-17 05:01:09.770] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:12.435] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/@me"]
+[2023-05-17 05:01:12.773] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:13.111] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1058450627061100585/1058464598568742963"]
+[2023-05-17 05:01:13.121] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 1058464598568742963 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 05:01:13.480] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 1058464598568742963, remote_fetch_completed: false)"]
+[2023-05-17 05:01:13.518] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1058464598568742963 isBefore:false isAfter:false"]
+[2023-05-17 05:01:14.054] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/1058450627061100585/1058464598568742963"]
+[2023-05-17 05:01:15.777] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:18.781] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:20.448] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:01:20.698] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:01:21.785] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:24.788] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:27.793] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:30.796] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:33.799] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:36.802] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:39.806] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:42.810] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:45.813] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:48.816] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:51.820] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:54.823] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:01:57.827] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:00.830] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:03.833] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:04.590] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 746158218811539548 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 05:02:04.594] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 746158218811539548, remote_fetch_completed: false)"]
+[2023-05-17 05:02:04.887] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 746158218811539548 isBefore:false isAfter:false"]
+[2023-05-17 05:02:06.836] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:09.840] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:12.843] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:15.847] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:18.850] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:20.703] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:02:20.941] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:02:21.853] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:24.857] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:27.860] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:30.863] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:33.866] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:36.870] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:39.873] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:42.876] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:45.880] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:48.880] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:51.883] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:54.886] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:02:57.890] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:00.893] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:03.896] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:06.900] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:09.903] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:12.906] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:15.910] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:18.912] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:20.942] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:03:21.154] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:03:21.914] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:24.917] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:27.920] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:30.921] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:33.923] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:36.926] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:39.928] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:42.930] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:45.933] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:46.370] [1849] (discord.cpp:658): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","51129","51135","[object Object]"]
+[2023-05-17 05:03:48.937] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:51.940] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:54.944] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:03:57.946] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:00.950] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:03.953] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:06.955] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:09.956] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:12.960] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:15.963] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:18.966] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:21.160] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:04:21.366] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:04:21.970] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:24.973] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:27.976] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:30.980] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:33.983] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:36.986] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:39.990] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:42.993] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:45.996] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:49.000] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:52.003] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:55.006] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:04:58.009] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:01.013] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:04.017] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:07.020] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:10.023] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:13.027] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:16.030] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:19.033] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:21.372] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:05:21.583] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:05:22.037] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:25.040] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:28.043] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:31.046] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:34.050] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:37.053] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:40.056] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:43.060] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:46.063] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:49.066] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:52.070] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:55.073] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:05:58.076] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:01.080] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:04.083] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:07.087] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:10.090] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:13.093] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:16.096] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:19.100] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:21.586] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:06:21.790] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:06:22.103] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:25.107] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:28.110] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:31.113] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:34.116] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:37.120] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:40.123] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:43.127] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:46.130] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:49.133] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:52.136] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:55.140] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:06:58.143] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:01.147] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:04.150] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:07.153] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:10.157] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:13.160] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:16.163] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:19.167] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:21.793] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:07:21.997] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:07:22.170] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:25.173] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:28.177] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:31.180] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:34.183] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:37.187] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:40.190] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:43.193] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:46.197] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:49.200] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:52.203] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:55.206] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:07:58.210] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:01.213] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:04.216] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:07.220] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:10.223] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:13.226] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:16.230] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:19.233] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:22.000] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:08:22.237] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:22.237] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:08:25.240] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:28.243] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:31.247] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:34.250] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:37.253] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:40.256] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:43.260] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:46.263] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:49.267] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:52.270] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:55.273] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:08:58.276] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:01.280] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:04.283] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:07.287] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:10.290] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:13.293] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:16.296] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:19.300] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:22.239] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:09:22.303] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:22.414] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:09:25.306] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:28.310] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:31.311] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:34.313] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:37.316] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:40.320] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:43.323] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:46.326] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:49.330] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:52.333] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:55.336] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:09:58.340] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:01.343] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:04.346] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:07.350] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:10.353] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:13.356] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:16.360] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:19.363] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:22.366] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:22.416] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:10:22.629] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:10:25.370] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:28.373] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:31.376] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:34.380] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:37.383] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:40.386] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:43.390] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:46.393] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:49.396] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:52.400] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:55.403] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:10:58.406] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:01.410] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:04.413] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:07.416] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:10.419] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:13.420] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:16.423] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:19.426] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:22.430] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:22.632] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:11:22.849] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:11:25.433] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:28.436] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:31.440] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:34.443] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:37.446] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:40.450] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:43.453] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:46.456] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:49.456] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:52.460] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:55.463] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:11:58.466] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:01.468] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:04.470] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:07.473] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:10.476] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:13.480] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:16.483] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:19.486] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:22.490] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:22.855] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:12:23.080] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:12:25.493] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:28.497] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:31.500] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:34.506] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:37.510] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:40.513] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:43.517] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:46.520] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:49.523] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:52.527] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:55.530] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:12:58.533] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:01.536] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:04.540] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:07.543] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:10.546] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:13.550] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:16.553] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:19.557] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:22.560] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:23.086] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:13:23.298] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:13:25.563] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:28.566] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:31.570] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:34.573] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:37.576] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:40.580] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:43.583] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:46.586] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:49.588] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:52.590] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:55.593] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:13:58.596] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:01.600] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:04.603] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:07.606] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:10.610] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:13.613] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:16.616] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:19.620] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:22.623] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:23.303] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:14:23.526] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:14:25.626] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:28.630] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:31.633] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:34.637] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:37.640] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:40.640] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:43.643] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:46.646] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:49.650] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:52.653] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:55.656] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:14:58.660] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:01.663] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:04.666] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:07.670] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:10.673] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:13.676] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:16.680] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:19.683] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:22.686] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:23.531] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:15:23.766] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:15:25.690] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:28.693] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:31.696] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:34.700] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:37.703] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:40.707] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:43.710] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:46.713] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:49.716] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:52.721] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:55.725] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:15:58.729] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:01.733] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:04.736] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:07.740] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:10.743] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:13.746] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:16.750] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:19.753] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:22.756] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:23.771] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:16:23.995] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:16:25.760] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:28.763] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:31.766] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:34.594] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Socket Opened: 18"]
+[2023-05-17 05:16:34.611] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Socket Emit: 18","[object Object]"]
+[2023-05-17 05:16:34.621] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Socket Message: 18","[object Object]"]
+[2023-05-17 05:16:34.770] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:34.797] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Socket Emit: 18","[object Object]"]
+[2023-05-17 05:16:34.847] [1849] (discord.cpp:658): JS console: ["%c[RPCServer:WSS]","Socket Closed: 18, code 1005, message "]
+[2023-05-17 05:16:37.773] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:40.776] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:42.980] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/239737791225790464/onboarding"]
+[2023-05-17 05:16:42.988] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/239737791225790464/onboarding"]
+[2023-05-17 05:16:43.780] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:45.188] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/239737791225790464/onboarding"]
+[2023-05-17 05:16:46.780] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:49.783] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:52.786] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:55.790] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:58.793] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:16:59.360] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/239737791225790464/600074740555579402"]
+[2023-05-17 05:16:59.362] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 600074740555579402 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 05:16:59.365] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 600074740555579402, remote_fetch_completed: false)"]
+[2023-05-17 05:16:59.594] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 4 messages for 600074740555579402 isBefore:false isAfter:false"]
+[2023-05-17 05:17:01.796] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:04.800] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:07.803] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:10.807] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:13.810] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:16.814] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:19.817] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:22.821] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:23.999] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:17:24.283] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:17:25.823] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:28.827] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:31.831] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:34.835] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:37.836] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:38.343] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetching messages for 489148972305350656 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-05-17 05:17:38.348] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 0 messages from local database (channel_id: 489148972305350656, remote_fetch_completed: false)"]
+[2023-05-17 05:17:38.460] [1849] (discord.cpp:658): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/239737791225790464/489148972305350656"]
+[2023-05-17 05:17:38.585] [1849] (discord.cpp:658): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 489148972305350656 isBefore:false isAfter:false"]
+[2023-05-17 05:17:40.840] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:43.843] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:46.846] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:49.850] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:52.853] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:55.856] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:17:58.860] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:01.863] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:04.866] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:07.870] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:10.873] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:13.876] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:16.880] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:19.883] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:22.886] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:24.290] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:18:24.538] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:18:25.890] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:28.893] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:31.896] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:34.900] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:37.903] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:40.906] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:43.910] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:46.913] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:49.916] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:52.920] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:55.923] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:18:58.926] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:01.930] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:04.933] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:07.936] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:10.940] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:13.943] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:16.946] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:19.950] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:22.953] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:24.543] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:19:24.767] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:19:25.956] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:28.960] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:31.963] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:34.966] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:37.970] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:40.973] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:43.976] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:46.980] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:49.983] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:52.987] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:55.990] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:19:58.993] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:01.996] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:05.000] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:08.003] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:11.006] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:14.010] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:17.014] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:20.016] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:23.020] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:24.774] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:20:25.072] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:20:26.023] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:29.026] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:32.030] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:35.033] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:38.036] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:41.040] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:44.043] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:47.046] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:50.046] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:53.050] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:56.054] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:20:59.056] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:02.060] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:05.063] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:08.066] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:11.070] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:14.073] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:17.076] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:20.080] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:23.083] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:25.078] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:21:25.307] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:21:26.084] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:29.086] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:32.090] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:35.093] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:38.093] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:41.096] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:44.100] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:47.103] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:50.103] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:53.106] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:56.110] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:21:59.114] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:02.118] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:05.122] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:08.126] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:11.127] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:14.131] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:17.135] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:20.139] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:23.143] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:25.312] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:22:25.550] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:22:26.147] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:29.150] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:32.153] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:35.156] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:38.159] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:41.163] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:44.167] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:47.171] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:50.173] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:53.176] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:56.178] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:22:59.180] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:02.181] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:05.183] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:08.186] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:11.190] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:14.193] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:17.196] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:20.200] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:23.203] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:25.556] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:23:25.774] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:23:26.206] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:29.210] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:32.213] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:35.216] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:38.220] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:41.223] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:44.226] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:47.230] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:50.233] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:53.236] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:56.240] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:23:59.243] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:02.246] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:05.250] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:08.253] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:11.256] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:14.260] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:17.263] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:17.787] [1849] (discord.cpp:658): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","51135","51140","[object Object]"]
+[2023-05-17 05:24:20.266] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:23.270] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:25.776] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:24:26.015] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:24:26.273] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:29.276] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:32.280] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:35.283] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:38.286] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:41.290] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:44.293] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:47.296] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:50.300] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:53.303] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:56.306] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:24:59.310] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:02.313] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:05.316] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:08.320] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:11.323] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:14.326] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:17.330] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:20.333] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:23.336] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:26.016] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:25:26.228] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:25:26.340] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:29.343] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:32.346] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:35.350] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:38.353] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:41.356] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:44.360] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:47.363] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:50.366] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:53.370] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:56.373] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:25:59.374] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:02.376] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:05.380] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:08.383] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:11.386] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:14.390] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:17.393] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:20.396] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:23.400] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:26.229] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:26:26.403] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:26.435] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:26:29.406] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:32.410] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:35.413] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:38.413] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:41.416] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:44.417] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:47.420] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:50.421] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:53.423] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:56.426] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:26:59.429] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:02.433] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:05.436] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:08.440] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:11.443] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:14.446] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:17.450] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:20.453] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:23.456] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:26.440] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:27:26.460] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:26.667] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:27:29.463] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:32.466] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:35.470] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:38.473] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:41.476] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:44.480] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:47.483] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:50.486] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:53.490] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:56.493] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:27:59.496] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:02.500] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:05.503] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:08.506] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:11.510] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:14.513] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:17.516] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:20.520] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:23.523] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:26.526] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:26.671] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:28:26.898] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:28:29.530] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:32.533] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:35.536] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:38.540] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:41.543] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:44.547] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:47.550] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:50.553] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:53.556] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:56.560] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:28:59.563] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:02.567] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:05.570] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:08.573] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:11.576] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:14.580] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:17.583] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:20.586] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:23.590] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:26.593] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:26.902] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:29:27.142] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:29:29.596] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:32.600] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:35.603] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:38.606] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:41.610] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:44.613] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:47.617] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:50.620] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:53.623] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:56.626] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:29:59.630] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:02.633] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:05.636] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:08.640] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:11.643] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:14.646] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:17.650] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:20.653] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:23.656] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:26.660] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:27.147] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:30:27.404] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:30:29.663] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:32.666] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:35.670] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:38.673] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:41.676] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:44.680] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:47.683] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:50.686] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:53.690] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:56.693] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:30:59.696] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:02.700] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:05.703] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:08.706] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:11.710] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:14.713] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:17.716] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:20.720] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:23.723] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:26.726] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:27.410] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:31:27.654] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:31:29.730] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:32.733] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:35.736] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:38.740] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:41.743] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:44.746] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:47.750] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:50.753] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:53.756] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:56.760] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:31:59.763] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:02.766] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:05.770] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:08.773] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:11.776] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:14.780] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:17.783] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:20.786] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:23.790] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:26.793] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:27.657] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:32:27.923] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:32:29.796] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:32.800] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:35.803] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:38.806] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:41.810] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:44.813] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:47.816] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:50.820] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:53.823] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:56.826] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:32:59.827] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:02.831] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:05.833] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:08.836] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:11.840] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:14.843] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:17.846] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:20.850] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:23.853] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:26.856] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:27.928] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:33:28.190] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:33:29.860] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:32.863] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:35.866] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:38.870] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:41.873] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:44.876] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:47.880] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:50.883] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:53.887] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:56.890] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:33:59.893] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:02.896] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:05.900] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:08.903] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:11.906] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:14.910] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:17.913] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:20.917] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:23.920] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:26.923] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:28.195] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:34:28.405] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:34:29.926] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:32.930] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:35.933] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:38.936] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:41.940] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:44.943] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:47.946] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:50.950] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:53.953] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:56.956] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:34:59.960] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:02.963] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:05.966] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:08.970] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:11.973] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:14.976] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:17.980] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:20.983] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:23.986] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:26.990] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:28.410] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:35:28.631] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:35:29.993] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:32.997] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:36.001] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:39.003] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:42.006] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:45.010] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:48.013] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:51.016] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:54.020] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:35:57.023] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:00.026] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:03.030] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:06.033] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:09.036] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:12.040] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:15.043] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:18.046] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:21.050] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:24.053] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:27.056] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:28.637] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:36:28.870] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:36:30.060] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:33.063] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:36.066] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:39.070] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:42.073] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:45.076] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:48.080] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:51.083] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:54.086] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:36:57.090] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:00.093] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:03.096] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:06.100] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:09.103] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:12.106] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:15.110] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:18.113] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:21.116] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:24.120] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:27.123] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:28.870] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:37:29.058] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:37:30.127] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:33.130] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:36.133] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:39.136] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:42.140] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:45.143] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:48.146] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:51.150] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:54.153] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:37:57.157] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:00.160] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:03.163] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:06.166] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:09.170] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:12.173] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:15.177] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:18.180] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:21.183] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:24.186] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:27.190] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:29.063] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:38:29.269] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:38:30.193] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:33.196] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:36.200] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:39.203] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:42.206] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:45.210] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:48.213] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:51.216] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:54.220] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:38:57.223] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:00.226] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:03.230] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:06.233] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:09.236] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:12.240] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:15.243] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:18.246] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:21.250] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:24.253] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:27.256] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:29.274] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:39:29.483] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:39:30.260] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:33.263] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:36.267] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:39.270] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:42.273] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:45.276] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:48.280] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:51.283] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:54.287] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:39:57.290] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:00.294] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:03.296] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:06.300] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:09.303] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:12.306] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:15.310] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:15.991] [1849] (discord.cpp:658): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","51140","51142","[object Object]"]
+[2023-05-17 05:40:18.313] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:21.316] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:24.320] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:27.323] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:29.485] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:40:29.735] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:40:30.326] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:33.330] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:36.333] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:39.336] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:42.340] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:45.343] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:48.346] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:51.144] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to WILL_RECONNECT"]
+[2023-05-17 05:40:51.144] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[WS CLOSED] (false, 1006, ) retrying in 1.24 seconds."]
+[2023-05-17 05:40:51.350] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:52.386] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to CONNECTING"]
+[2023-05-17 05:40:52.387] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway-us-east1-c.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-05-17 05:40:52.388] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","newOrTakeoverWebSocket()"]
+[2023-05-17 05:40:52.472] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway-us-east1-c.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 84 ms"]
+[2023-05-17 05:40:52.473] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to RESUMING"]
+[2023-05-17 05:40:52.473] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[RESUME] resuming session e259005cfa18349ad3a3f7881be9ae22, seq: 1377"]
+[2023-05-17 05:40:52.477] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-c-m8kt: 0, heartbeat interval: 41250, took 89 ms"]
+[2023-05-17 05:40:52.515] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","[RESUMED] took 128ms, via \ngateway-prd-us-east1-c-m8kt: 2.38\n|  id_created: 0\n|  session_lookup_time: 1.143\n|  session_lookup_finished: 0.013\n|  discord-sessions-prd-2-164: 0.065, replayed 7 events, new seq: 1384"]
+[2023-05-17 05:40:52.517] [1849] (discord.cpp:658): JS console: ["%c[GatewaySocket]","Setting connection state to SESSION_ESTABLISHED"]
+[2023-05-17 05:40:52.548] [1849] (discord.cpp:658): JS console: ["%c[Flux]","Dispatching CONNECTION_RESUMED"]
+[2023-05-17 05:40:54.353] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:40:57.357] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:00.360] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:03.363] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:06.367] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:09.371] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:12.373] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:15.377] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:18.380] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:21.384] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:24.386] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:27.390] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:29.740] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:41:29.984] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:41:30.393] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:33.397] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:36.400] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:38.564] [1849] (discord.cpp:658): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","51142","51144","[object Object]"]
+[2023-05-17 05:41:39.403] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:42.406] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:45.410] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:48.413] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:50.369] [1849] (discord.cpp:658): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-05-17 05:41:51.416] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:54.420] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:41:57.423] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:00.426] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:03.430] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:05.921] [1849] (discord.cpp:658): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","51144","51147","[object Object]"]
+[2023-05-17 05:42:06.434] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:09.436] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:12.440] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:15.443] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:18.446] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:21.450] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:24.453] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:27.456] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:29.985] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-05-17 05:42:30.196] [1849] (discord.cpp:658): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-05-17 05:42:30.460] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:33.463] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:36.466] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:39.470] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:42.473] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:45.476] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:48.480] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:51.483] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:54.487] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:42:57.490] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:00.493] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:03.496] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:06.500] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:09.502] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:12.503] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:15.506] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:18.510] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:21.513] [1882] (device_info_linux.cc:45): NumberOfDevices
+[2023-05-17 05:43:24.516] [1882] (device_info_linux.cc:45): NumberOfDevices
